@@ -1,0 +1,37 @@
+{
+  "name": "local-storage-example",
+  "version": "0.0.1",
+  "description": "create an app to demonstrate local storage",
+  "main": "index.js",
+  "bin": {
+    "create-wasm-app": ".bin/create-wasm-app.js"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metalurgical/wasm-storage-example.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "author": "Torus Labs <hello@tor.us>",
+  "license": "(MIT OR Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/metalurgical/wasm-storage-example/issues"
+  },
+  "homepage": "https://github.com/metalurgical/wasm-storage-example#readme",
+  "devDependencies": {
+    "hello-wasm-pack": "^0.1.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0",
+    "local-storage": "file:../pkg"
+  }
+}
